@@ -1,0 +1,147 @@
+/* Coolors Exported Palette - coolors.co/d1f0b1-b6cb9e-92b4a7-8c8a93-81667a */
+
+:root {
+  --bg-color: rgba(146, 180, 167, 1);
+  --font-color: #2e4057;
+  --border-div: rgba(129, 102, 122, 1);
+  --list-back: #ACDB9E;
+  --button-hover: #225724;
+  --color1: #caffb9;
+  --color2: #aef78e;
+  --canevas-back: #f1f7ed;
+  --c1: rgba(209, 240, 177, 1);
+  --c2: rgba(182, 203, 158, 1);
+  --c3: rgba(146, 180, 167, 1);
+  --c4: rgba(140, 138, 147, 1);
+  --border-button: #66a182;
+}
+
+
+body {
+  background-color: var(--bg-color);
+	}
+h1 {
+  margin: auto;
+  width: 400px;
+  border: 2px solid var(--border-div);
+  padding-left: 50px;
+  background-color: var(--list-back);
+  border-radius: 8px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  text-align: center;
+  }
+input {
+  margin: 2px;
+  border: 3px solid var(--border-button);
+  border-radius: 8px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+#animation { 
+  color: var(--font-color);
+  padding: 5px;
+  }
+
+#screen {
+  display: flex;
+  margin: auto;
+  padding:10px;
+  overflow: auto;                                                       
+  }
+#canvasdiv {
+  background-color: var(--canevas-back);
+  padding: 2px;
+  width: 508px;
+  margin: auto;
+  margin-right: 2px;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  border: 2px solid var(--border-div);
+  }
+  
+#log {
+  background-color: var(--canevas-back);
+  padding: 2px;
+  width: 150px;
+  height: 370px;
+  margin: auto;
+  margin-left: 2px;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  border: 2px solid var(--border-div);
+  font-size: 12px;
+  overflow: auto;
+}
+  
+#listAnimation {
+  background-color: var(--canevas-back);
+  margin: 3px;
+}
+
+#list {
+  width: 680px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4px;
+  border: 2px solid var(--border-div);
+  padding: 5px;
+  background-color: var(--list-back);
+  border-radius: 8px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#heap {
+  display: block;
+  width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid var(--border-div);
+  padding: 5px;
+  background-color: var(--c2);
+  border-radius: 8px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+input[type=button] {
+  background-color: var(--color2);
+  padding: 5px 8px 7px 8px;  
+
+}
+
+input[type=button]:hover {
+  background-color: var(--button-hover);
+  color: white;
+  box-shadow: unset;
+}
+
+input[type=number] {
+  width: 40px;
+  padding: 5px 5px 5px 3px;
+  text-align: center; 
+}
+
+#heap input[type=number] {
+
+}
+
+.action {
+  display: inline-block;
+}
+
+.action:hover span { 
+	display:block; 
+}
+
+span {	
+	display:none;
+	color:#fff;
+	background:rgba(51,51,51,0.75);
+	padding:5px;
+	border-radius:4px;
+	-webkit-border-radius:4px;
+	width:100px;
+	text-align:center;
+	position: absolute;
+	z-index:10;
+  font-size: 12px;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Animation javascript Tas</title>
+    <link rel="stylesheet" type="text/css" href="./format.css">
+    <script type="text/javascript" src="./biblio.js"></script>
+    <script type="text/javascript" src="./script.js"></script>
+  </head>
+
+<body>
+  <h1 id="titre">Animation Tas</h1>
+  <div id="animation">
+    <div id="screen">
+      <div id="canvasdiv">
+        <canvas id="listAnimation" width="500" height="350" style="border:1px solid #c3c3c3">
+          Canvas pas pris en charge...
+        </canvas>
+      </div>
+      <div id="log">
+        <p>Log :</p>
+      </div> 
+    </div>
+    <div id="list">
+        <div class="action">
+          <input id="listCreate" name="Valeur :" type="text" size="20" value="10" />
+          <span>List au format : 1,2,3,4,5 ou [1,2,3,4,5]</span>
+        </div>
+        <div class="action">
+          <INPUT type="button" value="créer" onClick="javascript: create()">
+          <span>Créer un tas d'après la liste</span>
+        </div>
+        <div class="action">      
+          <INPUT type="button" value="hasard" onClick="javascript:initPlay()">
+          <span>Insère une valeur au hasard</span>
+        </div>
+        <div class="action">
+          <INPUT type="button" value="mélanger" onClick="javascript:shuffle()">
+          <span>Mélange la liste</span>
+        </div>
+        <div class="action">
+          <input id="valuePush" name="Valeur :" type="number" min="-99" max="99" value="10" />
+          <span>Valeur à pousser</span>
+        </div>
+        <div class="action">
+          <INPUT type="button" value="push" onClick="javascript:push()">   
+          <span>Pousse une valeur en fin de liste</span>
+        </div>
+        <div class="action">  
+          <INPUT type="button" value="pop" onClick="javascript: listPop()">
+          <span>Supprime le dernier noeud de la liste</span>
+        </div>
+    </div>
+    <div id="heap">
+      <div id="verifyButton" class="action">
+        <INPUT type="button" value="vérifier" onClick="javascript:verifyPile()">
+        <span>Vérifier si la liste est un tas</span>
+      </div>
+      <div class="action">                  
+        <input id="valueInsert" name="Valeur :" type="number" min="-99" max="99" value="10" />
+        <span>Valeur à insérer dans le tas</span>
+      </div>
+      <div class="action">
+        <INPUT type="button" value="insertion" onClick="javascript:insert()">
+        <span>Insérer une valeur dans le tas</span>
+      </div>
+      <div class="action">
+        <input id="indexPackNode" name="Valeur :" type="number" min="0" max="30" value="10" />
+        <span>Indice du noeud à tasser</span>
+      </div>
+      <div class="action">    
+        <INPUT type="button" value="tasser noeud" onClick="javascript:packNode()">
+        <span>Tasser un noeud.</span>
+      </div>
+      <div class="action">        
+        <INPUT id="buttonPackPile" type="button" value="tasser tas" onClick="javascript:packPile()">
+        <span>Tasser le tas "tassifier"</span>
+      </div>
+      <div class="action">
+        <INPUT type="button" value="extraire minimum" onClick="javascript:extractMin()">
+        <span>Extraire le minimum et refaire un tas</span>
+      </div>
+      <div class="action">      
+        <INPUT type="button" value="trier" onClick="javascript:initPlay()">
+        <span>Trier le tas</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+	
